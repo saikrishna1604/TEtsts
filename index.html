@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        h1 {
+            color: #333;
+        }
+        .button-container {
+            margin-top: 30px;
+        }
+        button {
+            padding: 15px 30px;
+            font-size: 18px;
+            margin: 10px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>My Portfolio</h1>
+    <p>Click on a project to open its document!</p>
+    <div class="button-container">
+        <button onclick="openDocument('project1.pdf')">Project Part-1</button>
+        <button onclick="openDocument('project2.pdf')">Project Part-2</button>
+        <button onclick="openDocument('project3.pdf')">Project Part-3</button>
+    </div>
+
+    <script>
+        function openDocument(docPath) {
+            // Open the document in a new tab
+            window.open(docPath, '_blank');
+        }
+    </script>
+</body>
+</html>
